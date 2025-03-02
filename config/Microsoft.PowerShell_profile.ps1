@@ -11,3 +11,4 @@ if (Test-Path($ChocolateyProfile)) {
 }
 
 Set-Alias -Name vim -Value "C:\Program Files\Neovim\bin\nvim.exe"
+Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+t' -PSReadlineChordReverseHistory 'Ctrl+r'
