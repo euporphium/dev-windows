@@ -80,6 +80,7 @@ if (-not $skipConfig) {
 	Log "⚙️ Applying Configuration"
 
 	Copy-File config/Microsoft.PowerShell_profile.ps1 (Split-Path -Parent $PROFILE)
+	Copy-Directory config/appData "${env:LOCALAPPDATA}"
 }
 else {
 	Log "⭐️ Skipping Configuration"
